@@ -1,0 +1,16 @@
+<div class="form-content">
+    <div>
+        JOGOS 2
+    </div>
+    <div>
+        <mat-form-field appearance="outline">
+            <input type="text" aria-label="Number" matInput [formControl]="AutoCompleteJogoForm"
+                [matAutocomplete]="auto">
+            <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <mat-option *ngFor="let option of filteredJogo | async" [value]="option.name">
+                    {{option.name}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+    </div>
+</div>

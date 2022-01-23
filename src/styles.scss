@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+//Cursor por cima
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: orange;
+}
+
+//Define a borda permaneça com a cor
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: blueviolet;
+}
